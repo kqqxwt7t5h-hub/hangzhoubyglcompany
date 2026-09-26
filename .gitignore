@@ -1,0 +1,13 @@
+# Éditeurs
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Vercel (créé localement par la CLI vercel, ne pas versionner)
+.vercel
+
+# Fichiers système
+.DS_Store
+Thumbs.db
