@@ -4,9 +4,9 @@
    ========================================================================== */
 
 // EmailJS Credentials Configuration
-const EMAILJS_PUBLIC_KEY = "VOTRE_PUBLIC_KEY";   // Update with EmailJS Public Key
-const EMAILJS_SERVICE_ID = "VOTRE_SERVICE_ID";   // Update with EmailJS Service ID
-const EMAILJS_TEMPLATE_ID = "VOTRE_TEMPLATE_ID"; // Update with EmailJS Template ID
+const EMAILJS_PUBLIC_KEY = "-ASGWQM7zZti3GGOq";   // Update with EmailJS Public Key
+const EMAILJS_SERVICE_ID = "COFFI_URIEL";   // Update with EmailJS Service ID
+const EMAILJS_TEMPLATE_ID = "template_aw107qb"; // Update with EmailJS Template ID
 
 // Translations Dictionary (FR / EN)
 const translations = {
