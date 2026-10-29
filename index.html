@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangzhou BYGL Global Trading Company | Sourcing & International Trade</title>
+    <meta name="description" content="Hangzhou BYGL Global Trading Company - Sourcing sur-mesure, coordination usines, import-export et accompagnement de projets Chine & International.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <span><i data-lucide="mail"></i> hangzhoubyglcompany@gmail.com</span>
+                <span><i data-lucide="phone"></i> +86 185 1629 8726</span>
+                <span><i data-lucide="map-pin"></i> Hangzhou, Zhejiang, Chine</span>
+            </div>
+            <div class="top-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Passer en mode sombre">
+                    <i data-lucide="moon" class="dark-icon"></i>
+                    <i data-lucide="sun" class="light-icon"></i>
+                </button>
+                <div class="lang-switch">
+                    <button id="lang-btn-fr" class="lang-btn active">FR</button>
+                    <span class="lang-divider">/</span>
+                    <button id="lang-btn-en" class="lang-btn">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Logo Hangzhou BYGL Global Trading Company" class="logo-img" onerror="this.style.display='none'">
+                <div class="logo-badge-icon"><i data-lucide="globe"></i></div>
+                <span class="logo-text">BYGL <span class="logo-sub">GLOBAL</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Accueil</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">À Propos</a>
+                <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+                <a href="#products" class="nav-link" data-i18n="nav.products">Produits</a>
+                <a href="#journey" class="nav-link" data-i18n="nav.journey">Parcours</a>
+                <a href="#partner" class="nav-link" data-i18n="nav.partner">Partenariat</a>
+                <a href="#project" class="nav-link" data-i18n="nav.project">Projets</a>
+                <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.contact">Contact</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu principal">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge badge-accent" data-i18n="hero.badge">HANGZHOU BYGL GLOBAL TRADING COMPANY</span>
+                <h1 class="hero-title" data-i18n="hero.title">Votre passerelle directe et fluide avec le marché chinois</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Nous connectons les entreprises internationales et d'Afrique de l'Ouest aux meilleurs fabricants grâce à un sourcing rigoureux et une coordination commerciale locale à Hangzhou.</p>
+                <div class="hero-actions">
+                    <a href="#quote" class="btn btn-primary" data-i18n="hero.btn_quote">Demander un devis</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero.btn_services">Découvrir nos services</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item"><i data-lucide="shield-check"></i> <span data-i18n="hero.trust1">Entité légalement enregistrée à Hangzhou</span></div>
+                    <div class="trust-item"><i data-lucide="zap"></i> <span data-i18n="hero.trust2">Réponse sous 24 heures</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card-stack">
+                    <div class="hero-card-primary">
+                        <div class="hero-card-header">
+                            <div class="hero-card-icon"><i data-lucide="sparkles"></i></div>
+                            <div>
+                                <h4>Sourcing Sur-Mesure</h4>
+                                <p>Recherche & Négociation Directe</p>
+                            </div>
+                        </div>
+                        <div class="hero-stats-row">
+                            <div class="stat-box">
+                                <span class="stat-number color-coral">100%</span>
+                                <span class="stat-label">Conformité</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">Zhejiang</span>
+                                <span class="stat-label">Ancrage usines</span>
+                            </div>
+                        </div>
+                        <div class="hero-card-footer">
+                            <i data-lucide="arrow-up-right"></i> Accompagnement de A à Z pour vos imports
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Wide Band -->
+    <section class="feature-band">
+        <div class="container feature-band-content">
+            <div class="feature-band-item">
+                <div class="band-icon"><i data-lucide="building-2"></i></div>
+                <div>
+                    <h3 data-i18n="feat.1_title">Présence Locale à Hangzhou</h3>
+                    <p data-i18n="feat.1_desc">Implantation stratégique dans le Zhejiang facilitant les visites d'usines et le suivi direct.</p>
+                </div>
+            </div>
+            <div class="feature-band-item">
+                <div class="band-icon"><i data-lucide="search"></i></div>
+                <div>
+                    <h3 data-i18n="feat.2_title">Sourcing & Contrôle Qualité</h3>
+                    <p data-i18n="feat.2_desc">Sélection rigoureuse des fournisseurs selon vos critères exacts et vérification préalable.</p>
+                </div>
+            </div>
+            <div class="feature-band-item">
+                <div class="band-icon"><i data-lucide="handshake"></i></div>
+                <div>
+                    <h3 data-i18n="feat.3_title">Coordination Logistique</h3>
+                    <p data-i18n="feat.3_desc">Prise en charge administrative, négociation des coûts et sécurisation des expéditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent" data-i18n="about.subtitle">PRÉSENTATION INSTITUTIONNELLE</span>
+                <h2 class="section-title" data-i18n="about.title">À Propos de Hangzhou BYGL Global Trading</h2>
+                <p class="section-intro" data-i18n="about.p1">Hangzhou BYGL Global Trading Company est une société spécialisée dans le commerce international, le sourcing et la coordination d'affaires, enregistrée à Hangzhou, au cœur de la province dynamique du Zhejiang en Chine.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-main-card">
+                    <h3 data-i18n="about.heading">Une passerelle stratégique entre la Chine et le monde</h3>
+                    <p data-i18n="about.p2">Notre mission est d'offrir aux acheteurs, investisseurs et institutions du monde entier une présence locale transparente et fiable pour naviguer avec succès dans l'écosystème industriel et commercial chinois.</p>
+
+                    <div class="values-list">
+                        <div class="value-card">
+                            <div class="value-icon"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <h4 data-i18n="about.val1_title">Fiabilité & Transparence</h4>
+                                <p data-i18n="about.val1_desc">Gestion rigoureuse des échanges et clarté absolue à chaque étape de votre commande.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i data-lucide="target"></i></div>
+                            <div>
+                                <h4 data-i18n="about.val2_title">Coordination Sur-Mesure</h4>
+                                <p data-i18n="about.val2_desc">Des solutions adaptées aux exigences de volume, de normes et de délais de nos clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-card">
+                    <div class="legal-header">
+                        <i data-lucide="file-text"></i>
+                        <h3 data-i18n="about.legal_title">Informations Légales</h3>
+                    </div>
+                    <ul class="legal-details">
+                        <li><span data-i18n="about.legal_name_label">Raison Sociale :</span> <strong>Hangzhou BYGL Global Trading Company</strong></li>
+                        <li><span data-i18n="about.legal_rep_label">Représentant Légal :</span> <strong>IBRAHIM MAKAN KEITA</strong></li>
+                        <li><span data-i18n="about.legal_status_label">Statut Juridique :</span> <strong>Société à responsabilité limitée (Investissement Étranger)</strong></li>
+                        <li><span data-i18n="about.legal_date_label">Date d'enregistrement :</span> <strong>8 janvier 2026</strong></li>
+                        <li><span data-i18n="about.legal_cap_label">Capital Social :</span> <strong>100 000 CNY</strong></li>
+                        <li><span data-i18n="about.legal_addr_label">Siège Social :</span> <strong>Centre d’affaires Quanfu Lanekou, District de Shangcheng, Hangzhou, Zhejiang, Chine</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Staggered Grid -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent" data-i18n="services.subtitle">EXPERTISES & SOLUTIONS</span>
+                <h2 class="section-title" data-i18n="services.title">Nos Services Corporate</h2>
+            </div>
+
+            <!-- Staggered Layout for Services -->
+            <div class="services-staggered">
+                <div class="service-box service-featured">
+                    <div class="service-number color-coral">01</div>
+                    <div class="service-icon-wrapper"><i data-lucide="package-search"></i></div>
+                    <h3 data-i18n="service1.title">Sourcing de Produits</h3>
+                    <p data-i18n="service1.desc">Compréhension précise de votre besoin, recherche de fournisseurs chinois fiables, comparaison détaillée des devis et négociation des tarifs au plus juste.</p>
+                    <a href="#quote" class="btn btn-primary btn-sm" data-i18n="services.link_quote">Demander une étude</a>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-wrapper"><i data-lucide="factory"></i></div>
+                    <h3 data-i18n="service2.title">Coordination des Fournisseurs</h3>
+                    <p data-i18n="service2.desc">Identification de partenaires industriels, collecte d'informations, comparaison des offres et suivi quotidien de l'exécution des commandes.</p>
+                    <a href="#quote" class="btn-quiet" data-i18n="services.link_quote">En savoir plus <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-wrapper"><i data-lucide="ship"></i></div>
+                    <h3 data-i18n="service3.title">Accompagnement Import-Export</h3>
+                    <p data-i18n="service3.desc">Coordination des opérations d'expédition, assistance documentaire commerciale et facilitation auprès des prestataires logistiques partenaires.</p>
+                    <a href="#quote" class="btn-quiet" data-i18n="services.link_quote">En savoir plus <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-wrapper"><i data-lucide="trending-up"></i></div>
+                    <h3 data-i18n="service4.title">Conseil Commercial</h3>
+                    <p data-i18n="service4.desc">Accompagnement stratégique pour les entreprises souhaitant s'implanter ou développer leurs opportunités d'affaires entre la Chine et l'international.</p>
+                    <a href="#contact" class="btn-quiet" data-i18n="services.link_contact">Nous contacter <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-number">05</div>
+                    <div class="service-icon-wrapper"><i data-lucide="handshake"></i></div>
+                    <h3 data-i18n="service5.title">Développement de Partenariats</h3>
+                    <p data-i18n="service5.desc">Étude des propositions d'alliance stratégique, prise de contact, négociation des modalités et suivi continu des partenariats créés.</p>
+                    <a href="#partner" class="btn-quiet" data-i18n="services.link_partner">Devenir partenaire <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-number">06</div>
+                    <div class="service-icon-wrapper"><i data-lucide="layers"></i></div>
+                    <h3 data-i18n="service6.title">Accompagnement de Projets</h3>
+                    <p data-i18n="service6.desc">Analyse de faisabilité, structuration de propositions et coordination de projets commerciaux, industriels ou de développement spécialisés.</p>
+                    <a href="#project" class="btn-quiet" data-i18n="services.link_project">Proposer un projet <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sourcing Categories -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent" data-i18n="products.subtitle">CATALOGUE SOURCING</span>
+                <h2 class="section-title" data-i18n="products.title">Catégories de Produits Principales</h2>
+                <p class="section-intro" data-i18n="products.intro">Nous étudions vos demandes selon vos spécifications exactes, les volumes souhaités et la conformité exigée auprès de nos réseaux de fabricants.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="shirt"></i></div>
+                    <h3 data-i18n="prod.textiles">Textiles & Habillement</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Textiles" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="shopping-bag"></i></div>
+                    <h3 data-i18n="prod.bags">Sacs & Accessoires</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Sacs & Accessoires" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="gem"></i></div>
+                    <h3 data-i18n="prod.jewelry">Bijoux & Joaillerie</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Bijoux" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 data-i18n="prod.cosmetics">Cosmétiques & Beauté</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Cosmétiques" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="home"></i></div>
+                    <h3 data-i18n="prod.home">Maison & Équipements</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Maison" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="hammer"></i></div>
+                    <h3 data-i18n="prod.building">Matériaux de Construction</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Matériaux de Construction" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="car"></i></div>
+                    <h3 data-i18n="prod.auto">Pièces Automobiles</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Pièces Automobiles" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon"><i data-lucide="cpu"></i></div>
+                    <h3 data-i18n="prod.electronics">Produits Électroniques</h3>
+                    <a href="#quote" class="btn btn-secondary btn-sm quote-cat" data-cat="Électronique" data-i18n="prod.btn_quote">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Journey Section -->
+    <section id="journey" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent" data-i18n="journey.subtitle">ORGANIGRAMME DU PROCESSUS</span>
+                <h2 class="section-title" data-i18n="journey.title">Parcours Client & Flux de Travail</h2>
+                <p class="section-intro" data-i18n="journey.intro">Découvrez la méthode claire et structurée appliquée par BYGL pour traiter efficacement chaque typologie de demande.</p>
+            </div>
+
+            <div class="journey-card">
+                <div class="journey-steps-grid">
+                    <div class="journey-step">
+                        <div class="step-badge">1</div>
+                        <h4 data-i18n="flow.visitor">Soumission de la demande</h4>
+                        <p data-i18n="f1.step1">Saisie de vos besoins détaillés dans nos formulaires sécurisés.</p>
+                    </div>
+                    <div class="journey-step">
+                        <div class="step-badge">2</div>
+                        <h4 data-i18n="f1.step2">Qualification & Analyse</h4>
+                        <p data-i18n="f1.step3">Étude de faisabilité par notre équipe locale à Hangzhou.</p>
+                    </div>
+                    <div class="journey-step">
+                        <div class="step-badge">3</div>
+                        <h4 data-i18n="f1.step4">Sourcing Usines & Devis</h4>
+                        <p data-i18n="f1.step5">Recherche des meilleurs fabricants et négociation directe.</p>
+                    </div>
+                    <div class="journey-step">
+                        <div class="step-badge highlight-step">4</div>
+                        <h4 data-i18n="f1.step6">Commande & Expédition</h4>
+                        <p data-i18n="f1.step7">Suivi rigoureux de la production, contrôle qualité et logistique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header text-center">
+                    <span class="badge badge-accent" data-i18n="quote.subtitle">DEMANDE DE SOURCING</span>
+                    <h2 class="section-title" data-i18n="quote.title">Demander un Devis Commercial</h2>
+                </div>
+
+                <form id="quote-form" class="custom-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-name" data-i18n="form.fullname">Nom complet *</label>
+                            <input type="text" id="quote-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-company" data-i18n="form.company">Entreprise / Organisation *</label>
+                            <input type="text" id="quote-company" required placeholder="Global Trading Ltd">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-email" data-i18n="form.email">Adresse E-mail *</label>
+                            <input type="email" id="quote-email" required placeholder="contact@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-phone" data-i18n="form.phone">Téléphone / WhatsApp</label>
+                            <input type="text" id="quote-phone" placeholder="+33 6 12 34 56 78">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-country" data-i18n="form.country">Pays de destination *</label>
+                            <input type="text" id="quote-country" required placeholder="France, Mali, Canada...">
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-category" data-i18n="form.category">Catégorie de produit *</label>
+                            <select id="quote-category" required>
+                                <option value="" data-i18n="form.select_cat">-- Sélectionner une catégorie --</option>
+                                <option value="Textiles">Textiles & Habillement</option>
+                                <option value="Sacs & Accessoires">Sacs & Accessoires</option>
+                                <option value="Bijoux">Bijoux & Joaillerie</option>
+                                <option value="Cosmétiques">Cosmétiques & Beauté</option>
+                                <option value="Maison">Maison & Équipements</option>
+                                <option value="Matériaux de Construction">Matériaux de Construction</option>
+                                <option value="Pièces Automobiles">Pièces Automobiles</option>
+                                <option value="Électronique">Produits Électroniques</option>
+                                <option value="Autres">Autres Produits Sur-Mesure</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-qty" data-i18n="form.qty">Quantité estimée</label>
+                            <input type="text" id="quote-qty" placeholder="Ex: 5000 pièces">
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-budget" data-i18n="form.budget">Budget indicatif (USD/CNY)</label>
+                            <input type="text" id="quote-budget" placeholder="Ex: $10,000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quote-desc" data-i18n="form.desc">Description précise du besoin *</label>
+                        <textarea id="quote-desc" rows="4" required placeholder="Précisez les caractéristiques techniques, dimensions ou critères de qualité..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="quote-consent" required>
+                        <label for="quote-consent" data-i18n="form.consent">J'accepte que Hangzhou BYGL traite mes données dans le cadre de ma demande.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit_quote">Envoyer la demande de devis</button>
+                    <div class="form-message" id="quote-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Form Section -->
+    <section id="partner" class="section section-alt">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header text-center">
+                    <span class="badge badge-accent" data-i18n="partner.subtitle">COLLABORATION STRATÉGIQUE</span>
+                    <h2 class="section-title" data-i18n="partner.title">Devenir Partenaire BYGL</h2>
+                </div>
+
+                <form id="partner-form" class="custom-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-name" data-i18n="form.fullname">Nom et prénom *</label>
+                            <input type="text" id="partner-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-company" data-i18n="form.company">Entreprise / Organisation *</label>
+                            <input type="text" id="partner-company" required placeholder="Partner Org">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-email" data-i18n="form.email">E-mail professionnel *</label>
+                            <input type="email" id="partner-email" required placeholder="partner@org.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-phone" data-i18n="form.phone">Téléphone / WhatsApp</label>
+                            <input type="text" id="partner-phone" placeholder="+86 ...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-type" data-i18n="partner.type_label">Type de partenariat envisagé *</label>
+                        <select id="partner-type" required>
+                            <option value="" data-i18n="partner.type_select">-- Choisir un type --</option>
+                            <option value="Fournisseur Industriels" data-i18n="partner.opt1">Fournisseur / Usine partenaire en Chine</option>
+                            <option value="Distributeur International" data-i18n="partner.opt2">Distributeur / Agent International</option>
+                            <option value="Partenariat Logistique" data-i18n="partner.opt3">Partenaire Logistique & Transit</option>
+                            <option value="Autre Collaboration" data-i18n="partner.opt4">Autre collaboration commerciale</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="partner-desc" data-i18n="partner.desc_label">Description de la proposition *</label>
+                        <textarea id="partner-desc" rows="4" required placeholder="Présentez les objectifs de votre proposition de collaboration..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="partner-consent" required>
+                        <label for="partner-consent" data-i18n="form.consent">J'accepte le traitement de mes données pour l'étude de cette proposition.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary btn-block" data-i18n="partner.submit">Soumettre la demande de partenariat</button>
+                    <div class="form-message" id="partner-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Form Section -->
+    <section id="project" class="section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header text-center">
+                    <span class="badge badge-accent" data-i18n="project.subtitle">PROJETS SPÉCIAUX</span>
+                    <h2 class="section-title" data-i18n="project.title">Demander ou Proposer un Projet</h2>
+                </div>
+
+                <form id="project-form" class="custom-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="project-name" data-i18n="form.fullname">Nom du demandeur *</label>
+                            <input type="text" id="project-name" required placeholder="Nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-org" data-i18n="form.company">Organisation / Institution *</label>
+                            <input type="text" id="project-org" required placeholder="Nom de l'organisation">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="project-email" data-i18n="form.email">E-mail de contact *</label>
+                            <input type="email" id="project-email" required placeholder="project@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-title" data-i18n="project.title_label">Titre du projet *</label>
+                            <input type="text" id="project-title" required placeholder="Ex: Projet d'infrastructure / Eau potable">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-domain" data-i18n="project.domain_label">Domaine du projet *</label>
+                        <select id="project-domain" required>
+                            <option value="" data-i18n="project.domain_select">-- Sélectionner le domaine --</option>
+                            <option value="Commercial">Projet Commercial / Sourcing Grand Volume</option>
+                            <option value="Industriel">Projet Industriel & Équipements</option>
+                            <option value="Développement / Eau Potable">Développement & Accès à l'Eau Potable</option>
+                            <option value="Autre">Autre domaine spécialisé</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-desc" data-i18n="project.desc_label">Description détaillée et objectifs *</label>
+                        <textarea id="project-desc" rows="4" required placeholder="Détaillez le contexte, les besoins précis et le calendrier visé..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="project-consent" required>
+                        <label for="project-consent" data-i18n="form.consent">J'accepte le traitement de mes données pour l'évaluation du projet.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="project.submit">Soumettre le projet pour évaluation</button>
+                    <div class="form-message" id="project-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong Closing CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <span class="badge badge-accent">PRET A DEMARRER ?</span>
+                <h2>Concrétisez vos projets d'importation dès aujourd'hui</h2>
+                <p>Bénéficiez de l'accompagnement d'une équipe réactive directement implantée à Hangzhou, le hub commercial de la Chine.</p>
+                <div class="cta-buttons">
+                    <a href="#quote" class="btn btn-primary">Obtenir une cotation rapide</a>
+                    <a href="https://wa.me/8618516298726" target="_blank" class="btn btn-secondary"><i data-lucide="message-square"></i> Discuter sur WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent" data-i18n="contact.subtitle">PRENDRE CONTACT</span>
+                <h2 class="section-title" data-i18n="contact.title">Contactez Hangzhou BYGL</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                    <h3 data-i18n="contact.addr_title">Adresse du Siège</h3>
+                    <p>Centre d’affaires Quanfu Lanekou, District de Shangcheng, Hangzhou, Zhejiang, Chine</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i data-lucide="mail"></i></div>
+                    <h3 data-i18n="contact.email_title">E-mail Officiel</h3>
+                    <p>hangzhoubyglcompany@gmail.com</p>
+                    <a href="mailto:hangzhoubyglcompany@gmail.com" class="btn btn-secondary btn-sm" data-i18n="contact.btn_email">Envoyer un e-mail</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i data-lucide="phone"></i></div>
+                    <h3 data-i18n="contact.phone_title">Téléphone & WhatsApp</h3>
+                    <p>+86 185 1629 8726</p>
+                    <div class="contact-card-actions">
+                        <a href="https://wa.me/8618516298726" target="_blank" class="btn btn-primary btn-sm"><i data-lucide="message-circle"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8618516298726" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-text">BYGL <span class="logo-sub">GLOBAL</span></span>
+                </a>
+                <p data-i18n="footer.desc">Hangzhou BYGL Global Trading Company - Votre partenaire fiable pour le sourcing, la coordination commerciale et les échanges internationaux en Chine.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.quick_links">Navigation Rapide</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="#about" data-i18n="nav.about">À Propos</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#products" data-i18n="nav.products">Produits</a></li>
+                    <li><a href="#journey" data-i18n="nav.journey">Parcours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.services_links">Nos Services</h4>
+                <ul>
+                    <li><a href="#services" data-i18n="service1.title">Sourcing Produits</a></li>
+                    <li><a href="#services" data-i18n="service2.title">Coordination Usines</a></li>
+                    <li><a href="#services" data-i18n="service3.title">Import-Export</a></li>
+                    <li><a href="#services" data-i18n="service4.title">Conseil Commercial</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer.legal_heading">Légal & Contact</h4>
+                <p><strong>Représentant :</strong> IBRAHIM MAKAN KEITA</p>
+                <p><strong>Capital :</strong> 100 000 CNY</p>
+                <p><strong>Hangzhou, Zhejiang, Chine</strong></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Hangzhou BYGL Global Trading Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
